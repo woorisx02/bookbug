@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@include file="includes/header.jsp" %>
+<%@include file="../includes/header.jsp" %>
 <link rel="stylesheet" href="/resources/css/culture.css">
 <link rel="stylesheet" href="/resources/css/culture-image.css">
 
@@ -182,4 +182,4 @@
     </div>
     
     
-    <%@include file="includes/footer.jsp" %>                  
+    <%@include file="../includes/footer.jsp" %>                  
