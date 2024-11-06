@@ -5,7 +5,7 @@ CREATE TABLE member_tbl(
 	member_name		VARCHAR(20)		NOT NULL		COMMENT'회원이름',
 	member_gender	CHAR(2)			NOT NULL		COMMENT'성별',
 	member_email	VARCHAR(30)						COMMENT'이메일',
-	member_phone	CHAR(13)			NOT NULL		COMMENT'전화번호',
+	member_phone	CHAR(13)		NOT NULL		COMMENT'전화번호',
 	member_birthday	CHAR(10)		NOT NULL		COMMENT'생년월일',
 	member_zipcode		CHAR(7)						COMMENT'우편번호',
 	member_address		VARCHAR(100)				COMMENT'주소',

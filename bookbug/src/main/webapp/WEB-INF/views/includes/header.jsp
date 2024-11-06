@@ -30,9 +30,18 @@
                 <li><a href="#">Information</a><div class="menu-bar"></div></li>
             </ul>
 			
+          <c:if test="${member==null }">
             <ul class="top-menu">
-                <li><a href="#"><span>login</span><i class="bi bi-person-fill"></i></a></li>
-                <li><a href="#"><span>join</span><i class="bi bi-lock-fill"></i></a></li>
+                <li><a href="/admin/confirm/login"><span>login</span><i class="bi bi-person-fill"></i></a></li>
+                <li><a href="/admin/member/register"><span>join</span><i class="bi bi-lock-fill"></i></a></li>
             </ul>
+            </c:if>
+            <c:if test="${member!=null }">
+            <ul class="top-menu">
+                <li><a href="#"><span>${member.member_name }님</span>안녕하세요!</a></li>
+                <li><a href="/admin/confirm/logout"><span>logout</span></a></li>
+                <li><a href="/admin/member/mypage?member_id=${member.member_id }"><span>mypage</span></a></li>
+            </ul>
+            </c:if>
         </nav>
     </header> 

@@ -18,13 +18,13 @@ public class HomeController {
 	public String home() { return "index"; }
 	
 	@RequestMapping(value = "/support", method = RequestMethod.GET)
-	public String support() { return "support"; }
+	public String support() { return "static/support"; }
 	
 	@RequestMapping(value = "/ebook", method = RequestMethod.GET)
-	public String ebook() { return "ebook"; }
+	public String ebook() { return "static/ebook"; }
 	
 	@RequestMapping(value = "/culture", method = RequestMethod.GET)
-	public String culture() { return "culture"; }
+	public String culture() { return "static/culture"; }
 	
 	
 	

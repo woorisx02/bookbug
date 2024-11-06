@@ -18,6 +18,7 @@ public class AdminMemberController {
 	@Inject
 	private AdminMemberPersistenceImpl service;
 	
+	@Inject
 	private BCryptPasswordEncoder encoder;
 	
 	// 회원등록 화면 처리

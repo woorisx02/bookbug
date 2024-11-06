@@ -33,7 +33,7 @@
 			
 			<c:if test="${member==null }">
             <ul class="top-menu">
-                <li><a href="/admin/member/login"><span>login</span><i class="bi bi-person-fill"></i></a></li>
+                <li><a href="/admin/confirm/login"><span>login</span><i class="bi bi-person-fill"></i></a></li>
                 <li><a href="/admin/member/register"><span>join</span><i class="bi bi-lock-fill"></i></a></li>
             </ul>
             </c:if>
