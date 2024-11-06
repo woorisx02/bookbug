@@ -1,16 +1,25 @@
 
 CREATE TABLE member_tbl(
-	member_id		VARCHAR(20)		COMMENT'회원아이디',
+	member_id		VARCHAR(20)				COMMENT'회원아이디',
 	member_pwd		VARCHAR(20)		NOT NULL 	COMMENT'회원비밀번호',
+<<<<<<< HEAD
 	member_name		VARCHAR(20)		NOT NULL		COMMENT'회원이름',
 	member_gender	CHAR(2)			NOT NULL		COMMENT'성별',
 	member_email	VARCHAR(30)						COMMENT'이메일',
 	member_phone	CHAR(13)		NOT NULL		COMMENT'전화번호',
 	member_birthday	CHAR(10)		NOT NULL		COMMENT'생년월일',
 	member_zipcode		CHAR(7)						COMMENT'우편번호',
+=======
+	member_name		VARCHAR(20)		NOT NULL	COMMENT'회원이름',
+	member_gender		CHAR(2)			NOT NULL	COMMENT'성별',
+	member_email		VARCHAR(30)				COMMENT'이메일',
+	member_phone		CHAR(13)		NOT NULL	COMMENT'전화번호',
+	member_birthday		CHAR(10)		NOT NULL	COMMENT'생년월일',
+	member_zipcode		CHAR(7)					COMMENT'우편번호',
+>>>>>>> refs/remotes/origin/main
 	member_address		VARCHAR(100)				COMMENT'주소',
-	member_preference	CHAR(10)						COMMENT'선호장르',
-	member_reg_date	DATE							COMMENT'등록일',
-	member_up_date		DATE							COMMENT'수정일',
+	member_preference	CHAR(10)				COMMENT'선호장르',
+	member_reg_date	DATE	DATE					COMMENT'등록일',
+	member_up_date		DATE					COMMENT'수정일',
 	PRIMARY KEY(member_id)
 )COMMENT'회원테이블';
